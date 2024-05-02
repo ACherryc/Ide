@@ -2,7 +2,6 @@ package com.example.inventory.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import java.util.ArrayList;
 import com.example.inventory.model.Item;
 import com.example.inventory.service.ItemJpaRepository;
@@ -10,7 +9,7 @@ import com.example.inventory.service.ItemJpaRepository;
 public class ItemController{
 @Autowired
 public ItemJpaService itemService;
-@GetMapping("/items"")
+@GetMapping("/items")
 public ArrayList<Item> getItems(){
     return itemService.getItems();
  }
