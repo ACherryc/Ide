@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import java.util.ArrayList;
-import java.util.List;
+
 
 @Service
 public class ItemJpaRepository implements ItemRepository {
@@ -16,7 +16,7 @@ public class ItemJpaRepository implements ItemRepository {
 
     @Override
     public ArrayList<Item> getItems(){
-        List<Item> itemList = itemJpaRepository.findAll();
+        ArrayList<Item> itemList = itemJpaRepository.findAll();
         ArrayList<Item> items = new ArrayList<>(itemList);
         return items;
     }
