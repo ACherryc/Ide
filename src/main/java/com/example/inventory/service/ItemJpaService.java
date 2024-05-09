@@ -1,6 +1,7 @@
 package com.example.inventory.service;
 
 import com.example.inventory.model.Item;
+inport com.example.inventory.repository.ItemJpaRepository;
 import com.example.inventory.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 
 
 @Service
-public class ItemJpaRepository implements ItemRepository {
+public class ItemJpaService implements ItemRepository {
     @Autowired
     public ItemJpaRepository itemJpaRepository;
 
