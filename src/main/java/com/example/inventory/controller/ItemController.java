@@ -3,7 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import com.example.inventory.model.Item;
-import com.example.inventory.service.ItemJpaRepository;
+import com.example.inventory.service.ItemJpaService;
 @RestController
 public class ItemController{
 @Autowired
